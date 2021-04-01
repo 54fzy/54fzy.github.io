@@ -4,7 +4,20 @@
 
 layout: default
 ---
+{% include head.html %}
 
-# Hello
+# Intro
 
-个人主页哈哈
+## Time is {{ 'now' | date: "%Y %h %a"}} 
+
+## Something about me
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a target="_blank" href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
