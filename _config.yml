@@ -8,6 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 theme: jekyll-theme-architect # my theme
 url: "http://example.com" # the base hostname & protocol for your site
 permalink: /:title/
+excerpt_separator: <!--end_excerpt-->
 
 twitter_username: jekyllrb
 github_username:  jekyll

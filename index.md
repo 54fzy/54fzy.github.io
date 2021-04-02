@@ -15,9 +15,11 @@ layout: default
 <ul>
   {% for post in site.posts %}
     <li>
-      <a target="_blank" href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <br>
+      {{ post.content | strip_html | truncatewords: 50 }}     
     </li>
   {% endfor %}
 </ul>
 
-
+{{ page.excerpt }}
