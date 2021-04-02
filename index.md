@@ -22,4 +22,4 @@ layout: default
   {% endfor %}
 </ul>
 
-{{ page.excerpt }}
+{{ site.github.contributors[0].login }} 
