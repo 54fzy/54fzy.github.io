@@ -11,7 +11,14 @@ layout: default
 ## Time is {{ 'now' | date: "%Y %h %a"}} 
 
 ## Something about me
-
+## Something about me
+## Something about me
+## Something about me
+## Something about me
+## Something about me
+## Home
+<p name="home"> content about home </p>
+## Something about me
 <ul>
   {% for post in site.posts %}
     <li>
@@ -22,4 +29,5 @@ layout: default
   {% endfor %}
 </ul>
 
+{{ site.theme }}
 {{ site.github.contributors[0].login }} 

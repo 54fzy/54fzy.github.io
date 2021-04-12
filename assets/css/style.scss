@@ -1,0 +1,21 @@
+---
+---
+
+@import "{{ site.theme }}";
+.pic {
+  margin-left: 0px;
+}
+#gitpage {
+  background: pink url(../images/github-button.png) 0 0 no-repeat;
+}
+.intro {
+   font-size:25px;
+   display:flex;
+   align-items: center;
+   flex-direction: row;
+   color:pink;
+}
+aside#sidebar a.button {
+    display: block;
+    border-radius: 25px;
+}
