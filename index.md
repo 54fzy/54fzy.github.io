@@ -6,19 +6,14 @@ layout: default
 ---
 {% include head.html %}
 
-# Intro
+# News
 
-## Time is {{ 'now' | date: "%Y %h %a"}} 
+### [Fresh calculation of obscure particle's magnetism could dim hopes for new physics]({% link about.md %})
+### [Externel link to Google](https://www.google.com)
 
-## Something about me
-## Something about me
-## Something about me
-## Something about me
-## Something about me
-## Something about me
-## Home
+# Home
 <p name="home"> content about home </p>
-## Something about me
+# Something about me
 <ul>
   {% for post in site.posts %}
     <li>
@@ -29,5 +24,5 @@ layout: default
   {% endfor %}
 </ul>
 
-{{ site.theme }}
-{{ site.github.contributors[0].login }} 
+### Lst Modification on {{ "now" | date: "%Y-%m-%d %H:%M:%S %p" }}.
+

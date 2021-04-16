@@ -5,9 +5,20 @@
 .pic {
   margin-left: 0px;
 }
-#gitpage {
-  background: pink url(../images/github-button.png) 0 0 no-repeat;
+#homeButton {
+  transition: ease-in 1.5s;
+  background: linear-gradient(0, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-90deg, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-180deg, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-270deg, #108b96 2px, #108b96 2px) no-repeat;
+  background-size: 0 2px, 2px 0, 0 2px, 2px 0;
+  background-position: left top, right top, right bottom, left bottom;
+
 }
+#homeButton:hover {
+    background-size: 100% 2px,  2px 100%, 100% 2px, 2px 100%;
+}
+
 .intro {
    font-size:25px;
    display:flex;
@@ -18,4 +29,75 @@
 aside#sidebar a.button {
     display: block;
     border-radius: 25px;
+}
+#main-content h1:before {
+    content: "📢";
+}
+#main-content h3:before {
+    content: "";
+}
+#main-content h3 {
+  a {
+       color:green;
+     }
+}
+
+body #magicMouseCursor {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  border: 1px solid black;
+  border-radius: 50%;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  transition: transform 0.07s, width 0.3s, height 0.3s;
+  pointer-events: none; }
+  body #magicMouseCursor.cursor-square {
+    border-radius: 0; 
+    border: 0px;
+  }
+
+body #magicPointer {
+  height: 5px;
+  width: 5px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: black;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: background 0.2s, width 0.2s, height 0.2s, box-shadow 0.2s; }
+  body #magicPointer.is-hover {
+    background: red; 
+  }
+  body #magicPointer.pointer-blur {
+    height: 50px;
+    width: 50px;
+    background: none;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 15px -5px white; }
+  body #magicPointer.pointer-overlay {
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: difference;
+    box-shadow: 0px 0px 15px -5px black; }
+
+body .magic-hover {
+  transition: all 0.2s; }
+  body .magic-hover:hover {
+    cursor: none; }
+
+
+.exammple {
+    transition: ease-in 3s;
+    background: linear-gradient(0, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-90deg, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-180deg, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-270deg, #108b96 2px, #108b96 2px) no-repeat;
+    background-size: 0 2px, 2px 0, 0 2px, 2px 0;
+    background-position: left top, right top, right bottom, left bottom;
+}
+.exammple:hover {
+    background-size: 100% 2px,  2px 100%, 100% 2px, 2px 100%;
 }
