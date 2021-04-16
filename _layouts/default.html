@@ -60,12 +60,13 @@
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }} 王二毛&XJM</a>.</p>
           {% endif %}
           -->
-	<a href="#home" class="button magic-hover magic-hover__square" id="homeButton"><p style="color:black; font-size:25px; position:relative; left:-18px; top:5px">🏡 Home</p></a>
-	<a href=""><h2> Research </h2></a> 
-	<a href="" class="magic-hover magic-hover__square"><h2> CV </h2></a>     
-	<a href="" class="button magic-hover magic-hover__square"><small>Contact me</small></a>
+	<a href="#home" class="button magic-hover magic-hover__square" id="homeButton"><p class="sidebarButtonFontStyle">🏡 Home</p></a>
+	<a href="{{ site.url }}/assets/documents/deloitte.pdf" class="button magic-hover magic-hover__square" id="homeButton"><p class="sidebarButtonFontStyle">👦 CV</p></a>     
+	<a href="{{ site.github.owner_url }}" class="button magic-hover magic-hover__square"  id="homeButton"><p class="sidebarButtonFontStyle">📭 Contact</p></a>
+                <!--
 	<a href="{{ site.github.repository_url }}" class="button magic-hover magic-hover__square"><small>View project on</small> GitHub</a>
 	<a href="{{ site.github.owner_url }}" class="button magic-hover magic-hover__square"><small>Follow me on</small> GitHub</a>
+	-->
        	{% if site.github.is_project_page %}
            
                 {% endif %}
@@ -101,7 +102,5 @@
       	};
     magicMouse(options);
     </script>
-
-                <div class="exammple">testDiv</div>
   </body>
 </html>

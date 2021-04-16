@@ -5,7 +5,31 @@
     Link.rel = "shortcut icon";
     Link.href = "assets/logo.png";
     top.document.getElementsByTagName("head")[0].appendChild(Link);
-  }  
+    intv = setInterval(changeMouseStyle, 2050);
+    document.addEventListener('mousemove', checkMouse, false);
+  } 
+  
+  var timer = 0;
+  checkMouse = function() {   
+      timer = 0;      
+      var cir = document.getElementById("magicMouseCursor");
+      cir.style.borderColor = "black"; 
+  }
+  changeMouseStyle = function() {
+    if(timer >= 3) {
+      var cir = document.getElementById("magicMouseCursor");
+      cir.style.borderColor = getRandomColor();
+    }
+    timer += 3;
+  } 
+  function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  } 
 </script>
 
 

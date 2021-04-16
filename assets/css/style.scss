@@ -5,6 +5,13 @@
 .pic {
   margin-left: 0px;
 }
+.sidebarButtonFontStyle {
+  color:black; 
+  font-size:25px; 
+  position:relative; 
+  left:-18px; 
+  top:5px;
+}
 #homeButton {
   transition: ease-in 1.5s;
   background: linear-gradient(0, #108b96 2px, #108b96 2px) no-repeat, 
