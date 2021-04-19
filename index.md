@@ -25,4 +25,3 @@ layout: default
 </ul>
 
 ### Lst Modification on {{ "now" | date: "%Y-%m-%d %H:%M:%S %p" }}.
-
