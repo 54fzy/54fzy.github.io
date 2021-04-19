@@ -6,14 +6,29 @@ layout: default
 ---
 {% include head.html %}
 
-# News
+# 📢 News
+<a id="news"></a>
 
-### [Fresh calculation of obscure particle's magnetism could dim hopes for new physics]({% link about.md %})
-### [Externel link to Google](https://www.google.com)
+### * [Fresh calculation of obscure particle's magnetism could dim hopes]({% link about.md %})
+### * [Externel link to Google](https://www.google.com)
+### * [Test Link]()
 
-# Home
-<p name="home"> content about home </p>
-# Something about me
+<br>
+<br>
+<br>
+
+# 👷 Research Interests
+<a id="RI"></a>
+## AI
+## IoT
+## NLP
+## Robotics
+
+<br>
+<br>
+<br>
+
+# 🗞 Posts
 <ul>
   {% for post in site.posts %}
     <li>
@@ -24,4 +39,8 @@ layout: default
   {% endfor %}
 </ul>
 
-### Lst Modification on {{ "now" | date: "%Y-%m-%d %H:%M:%S %p" }}.
+<br>
+<br>
+<br>
+
+### Lst Modification in {{ "now" | date: "%Y" }}.

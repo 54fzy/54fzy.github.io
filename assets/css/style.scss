@@ -31,14 +31,20 @@
    display:flex;
    align-items: center;
    flex-direction: row;
-   color:pink;
+   color:yellow;
 }
 aside#sidebar a.button {
     display: block;
     border-radius: 25px;
 }
 #main-content h1:before {
-    content: "📢";
+    content: "";
+}
+#main-content h2:before {
+    content: "";
+}
+#main-content h2{
+    color:black;
 }
 #main-content h3:before {
     content: "";
@@ -46,7 +52,18 @@ aside#sidebar a.button {
 #main-content h3 {
   a {
        color:green;
+       transition: ease-in 0.5s;
+       background: linear-gradient(0, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-90deg, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-180deg, #108b96 2px, #108b96 2px) no-repeat, 
+                linear-gradient(-270deg, #108b96 2px, #108b96 2px) no-repeat;
+       background-size: 0 2px, 2px 0, 0 2px, 2px 0;
+       background-position: left top, right top,center bottom, right bottom;
      }
+  a:hover {
+      color:red;
+      background-size: 0% 2px,  2px 0%, 100% 2px, 2px 0%;
+  }
 }
 
 body #magicMouseCursor {
