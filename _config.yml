@@ -4,7 +4,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Real Researcher
 baseurl: "" # the subpath of your site, e.g. /blog
 theme: jekyll-theme-architect # my theme
-url: "https://zyfeng-go.github.io/" # the base hostname & protocol for your site
+homepage: "https://zyfeng-go.github.io/" # the base hostname & protocol for your site
 permalink: /:title/
 excerpt_separator: <!--end_excerpt-->
 
