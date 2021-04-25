@@ -6,6 +6,18 @@ layout: default
 ---
 {% include head.html %}
 
+# 👷 Research Interests
+<a id="RI"></a>
+
+## I. AI
+## II. IoT
+## III. NLP
+## IV. Robotics
+
+<br>
+<br>
+<br>
+
 # 📢 News
 <a id="news"></a>
 
@@ -14,33 +26,19 @@ layout: default
 ### * [Test Link]()
 
 <br>
-<br>
-<br>
 
-# 👷 Research Interests
-<a id="RI"></a>
-## AI
-## IoT
-## NLP
-## Robotics
 
-<br>
-<br>
-<br>
+# 🗞 Publications
 
-# 🗞 Posts
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <br>
-      {{ post.content | strip_html | truncatewords: 50 }}     
-    </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+   <h3 style="color:black; "><strong> {{ post.title }} </strong></h3>  
+   {{ post.excerpt }}
+{% endfor %}
+
+### You can also find publications on <a>Google Scholar</a>
+
 
 <br>
 <br>
 <br>
 
-### Lst Modification in {{ "now" | date: "%Y" }}.
