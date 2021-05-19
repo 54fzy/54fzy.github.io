@@ -7,6 +7,18 @@
     top.document.getElementsByTagName("head")[0].appendChild(Link);
     intv = setInterval(changeMouseStyle, 1550);
     document.addEventListener('mousemove', checkMouse, false);
+
+    var atags = document.getElementById('main-content').getElementsByTagName("h3");
+    for (let atag of atags) {
+      if(atag.children[0].tagName == 'A') {
+        atag.children[0].onmouseover = function(){ 
+          document.getElementById('magicMouseCursor').style.border = "0"; 
+        }
+        atag.children[0].onmouseout = function(){ 
+          document.getElementById('magicMouseCursor').style.border=""; 
+        }
+      }
+    }
   } 
   
   var timer = 0;
@@ -29,7 +41,7 @@
       color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
-  } 
+  }
 </script>
 
 
